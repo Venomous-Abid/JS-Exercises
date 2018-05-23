@@ -49,3 +49,33 @@ function getReadingStatus (index) {
 }
 console.log("The reading status is:");
 console.log(getReadingStatus(1));
+
+console.log("Task 5: Add a item");
+
+var cart = [ 
+   {
+       name: 'Shoes',
+       price: 560,
+       quantity: 4
+   },
+   {
+       name: 'Regular Tees',
+       price: 455.50,
+       quantity: 6
+   },
+   {
+       name: 'Socks',
+       price: 65.99,
+       quantity: 2
+   }];
+//5 a
+
+function addItem(newItem) {
+    cart.push(newItem);
+    console.log(cart);
+}
+var newItem= {name: 'Shamahaque',
+       price: 9999999.99,
+       quantity: 1};
+    
+    addItem(newItem);
